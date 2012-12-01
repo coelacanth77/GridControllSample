@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="GridControllSample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GridControllSample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="140"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Canvas Grid.Row="0" Grid.Column="0" Background="Red" />
+        <Canvas Grid.Row="0" Grid.Column="1" Background="Green" />
+        <Canvas Grid.Row="1" Grid.Column="0" Background="Blue" />
+        <Canvas Grid.Row="1" Grid.Column="1" Background="Yellow" />
+        <Canvas Grid.Row="2" Grid.ColumnSpan="2" Height="60" Background="Violet" />
+        <Canvas Grid.Row="3" Grid.ColumnSpan="2" Background="Chocolate" />
+    </Grid>
+</Page>
